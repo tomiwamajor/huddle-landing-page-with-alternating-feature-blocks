@@ -1,0 +1,345 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+.header {
+  background-color: hsl(193, 100%, 96%);
+  background-image: url(/images/bg-hero-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 95px;
+  &__button {
+    width: 150px;
+    border: none;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.051);
+    transition: all 0.4s;
+
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 10px black;
+    }
+    &:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &__body {
+    display: flex;
+    width: 1200px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 30px;
+
+    @media only screen and (max-width: 1160px) {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &--heading {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      padding-top: 85px;
+      color: hsl(192, 100%, 9%);
+      font-size: 55px;
+      padding-bottom: 15px;
+
+      @media only screen and (max-width: 900px) {
+        font-size: 40px;
+      }
+    }
+    &--paragraph {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      color: hsl(192, 100%, 9%);
+      padding-bottom: 15px;
+    }
+    &--button {
+      width: 200px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: none;
+      border-radius: 25px;
+      background-color: hsl(322, 100%, 66%);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.051);
+      transition: all 0.4s;
+
+      &:hover {
+        cursor: pointer;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 10px black;
+        background-color: hsla(322, 100%, 66%, 0.588);
+      }
+      &:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+      }
+    }
+    &--text {
+      @media only screen and (max-width: 1160px) {
+        padding-bottom: 40px;
+      }
+    }
+    &--image {
+      flex: 0 0 55%;
+
+      @media only screen and (max-width: 1160px) {
+        flex: unset;
+        width: 100%;
+      }
+    }
+    &--img {
+      width: 100%;
+    }
+  }
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  max-width: 90%;
+  padding-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 60px;
+}
+
+.section {
+  width: 1200px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 150px;
+}
+
+.sections {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 70px;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.125);
+  border-radius: 10px;
+
+  @media only screen and (max-width: 1160px) {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 0;
+  }
+
+  &__second {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 70px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.125);
+    border-radius: 10px;
+
+    @media only screen and (max-width: 1160px) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    padding-left: 80px;
+    color: hsl(192, 100%, 9%);
+
+    @media only screen and (max-width: 1160px) {
+      padding-left: 0;
+    }
+  }
+  &__image {
+    flex: 0 0 40%;
+
+    @media only screen and (max-width: 1160px) {
+      flex: unset;
+      width: 100%;
+    }
+
+    &--img {
+      width: 100%;
+    }
+  }
+
+  &__second {
+    flex: 0 0 40%;
+
+    @media only screen and (max-width: 1160px) {
+      flex: unset;
+      width: 100%;
+    }
+    &--img {
+      width: 100%;
+    }
+  }
+  &__heading {
+    padding-top: 150px;
+    padding-bottom: 15px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+  }
+  &__paragraph {
+    font-family: "Open Sams", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+  }
+}
+
+.start {
+  transform: translateY(-70px);
+  max-width: 90%;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 15px;
+  background-color: #fff;
+  padding-bottom: 25px;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.125);
+  border-radius: 15px;
+  &__heading {
+    font-size: 40px;
+    color: hsl(192, 100%, 9%);
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 15px;
+
+    @media only screen and (max-width: 900px) {
+      font-size: 30px;
+    }
+
+    @media only screen and (max-width: 670px) {
+      font-size: 20px;
+    }
+  }
+  &__button {
+    width: 200px;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    background-color: hsl(322, 100%, 66%);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.051);
+    transition: all 0.4s;
+
+    @media only screen and (max-width: 900px) {
+      width: 150px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 10px black;
+      background-color: hsla(322, 100%, 66%, 0.588);
+    }
+    &:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+}
+
+footer {
+  background-color: hsl(192, 100%, 9%);
+}
+
+.footer {
+  width: 1200px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+
+  &__foot {
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 1160px) {
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    max-width: 90%;
+    padding-bottom: 15px;
+  }
+
+  &__svg {
+  }
+
+  &__location,
+  &__phone,
+  &__mail {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__mail {
+    padding-bottom: 40px;
+  }
+
+  &__text {
+    width: 250px;
+  }
+
+  &__list {
+    &:hover {
+      cursor: pointer;
+      color: rgba(255, 255, 255, 0.611);
+    }
+  }
+
+  &__unordered {
+    width: 300px;
+  }
+
+  &__socials {
+    flex-direction: column;
+
+    &--facebook,
+    &--instagram,
+    &--twitter {
+      padding: 7px;
+      border: #fff 1px solid;
+      border-radius: 70%;
+
+      @media only screen and (max-width: 1160px) {
+        padding: 3px;
+      }
+
+      &:hover {
+        border: hsla(322, 100%, 66%, 0.588) 1px solid;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__copyright {
+    padding-bottom: 30px;
+  }
+
+  &__copy {
+    padding-top: 30px;
+    padding-left: 75%;
+
+    @media only screen and (max-width: 1160px) {
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+}
