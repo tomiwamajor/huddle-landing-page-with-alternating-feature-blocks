@@ -40,7 +40,7 @@ body {
     .header__body--heading {
       font-family: "Poppins", sans-serif;
       font-weight: 600;
-      padding-top: 85px;
+      padding-top: 65px;
       color: #00252e;
       font-size: 55px;
       padding-bottom: 15px; }
@@ -72,12 +72,6 @@ body {
     @media only screen and (max-width: 1160px) {
       .header__body--text {
         padding-bottom: 40px; } }
-    .header__body--image {
-      flex: 0 0 55%; }
-      @media only screen and (max-width: 1160px) {
-        .header__body--image {
-          flex: unset;
-          width: 100%; } }
     .header__body--img {
       width: 100%; }
 
@@ -91,10 +85,8 @@ body {
   margin-left: auto;
   padding-bottom: 60px;
   gap: 30px; }
-  .heading__image {
+  .heading__img {
     flex: 0 0 20%; }
-    .heading__image--img {
-      width: 100%; }
 
 .section {
   width: 1200px;
@@ -158,7 +150,6 @@ body {
     font-family: "Open Sans", sans-serif; }
   .sections__paragraph {
     font-family: "Open Sams", sans-serif;
-    font-weight: 400;
     font-size: 20px; }
 
 .start {

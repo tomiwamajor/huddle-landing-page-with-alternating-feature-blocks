@@ -49,7 +49,7 @@ body {
     &--heading {
       font-family: "Poppins", sans-serif;
       font-weight: 600;
-      padding-top: 85px;
+      padding-top: 65px;
       color: hsl(192, 100%, 9%);
       font-size: 55px;
       padding-bottom: 15px;
@@ -90,14 +90,7 @@ body {
         padding-bottom: 40px;
       }
     }
-    &--image {
-      flex: 0 0 55%;
 
-      @media only screen and (max-width: 1160px) {
-        flex: unset;
-        width: 100%;
-      }
-    }
     &--img {
       width: 100%;
     }
@@ -115,11 +108,8 @@ body {
   padding-bottom: 60px;
   gap: 30px;
 
-  &__image {
+  &__img {
     flex: 0 0 20%;
-    &--img {
-      width: 100%;
-    }
   }
 }
 
@@ -202,7 +192,6 @@ body {
   }
   &__paragraph {
     font-family: "Open Sams", sans-serif;
-    font-weight: 400;
     font-size: 20px;
   }
 }
