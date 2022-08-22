@@ -89,7 +89,12 @@ body {
   padding-top: 40px;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 60px; }
+  padding-bottom: 60px;
+  gap: 30px; }
+  .heading__image {
+    flex: 0 0 20%; }
+    .heading__image--img {
+      width: 100%; }
 
 .section {
   width: 1200px;

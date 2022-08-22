@@ -113,6 +113,14 @@ body {
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 60px;
+  gap: 30px;
+
+  &__image {
+    flex: 0 0 20%;
+    &--img {
+      width: 100%;
+    }
+  }
 }
 
 .section {
