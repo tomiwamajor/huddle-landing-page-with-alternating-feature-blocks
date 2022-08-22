@@ -108,8 +108,14 @@ body {
   padding-bottom: 60px;
   gap: 30px;
 
+  &__image {
+    @media only screen and (max-width: 670px) {
+      flex: 0 0 50%;
+    }
+  }
+
   &__img {
-    flex: 0 0 20%;
+    width: 100%;
   }
 }
 
